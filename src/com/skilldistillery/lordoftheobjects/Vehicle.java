@@ -24,6 +24,10 @@ public class Vehicle {
 
 	public void setCondition(int condition) {
 		this.condition = condition;
+		if(condition <= 0) {
+			System.out.println("Game over, you are a looser!");
+			System.exit(0);
+		}
 	}
 	public String getSize() {
 		return size;

@@ -12,7 +12,7 @@ public class GameApp {
 	public void run() {
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Good morning and welcome to Denver's Morning Traffic battle! "
-				+ "Select your combat vehicle");
+				+ "Select your combat vehicle wisely, it is a war out there.");
 		System.out.println("1: Humvee");
 		System.out.println("2: Camry");
 		System.out.println("3: Pinto");
@@ -44,6 +44,8 @@ public class GameApp {
 			System.out.println("3. Wait for the animals to move.");
 			int decision = kb.nextInt();
 			
+			
+			
 			if(decision == 1) {
 				System.out.println("Oh no the tires slipped on poop and you hit a wall");
 				player.setCondition (player.getCondition() - 3);
@@ -56,7 +58,7 @@ public class GameApp {
 			}
 			if(decision == 3) {
 				System.out.println("Hmm");
-				player.setCondition (player.getCondition() - 1);
+				player.setCondition (player.getCondition() - 0);
 			}
 		}
 		
