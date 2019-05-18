@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Vehicle {
 
 //	Fields
-	private String condition;
+	private int condition;
 	private String size;
 	private String advantage;
 	private String disadvantage;
 	
-	public String getCondition() {
+	public int getCondition() {
 		return condition;
 	}
 	
-	public Vehicle(String condition, String size, String advantage, String disadvantage) {
+	public Vehicle(int condition, String size, String advantage, String disadvantage) {
 		super();
 		this.condition = condition;
 		this.size = size;
@@ -22,7 +22,7 @@ public class Vehicle {
 		this.disadvantage = disadvantage;
 	}
 
-	public void setCondition(String condition) {
+	public void setCondition(int condition) {
 		this.condition = condition;
 	}
 	public String getSize() {
@@ -45,13 +45,13 @@ public class Vehicle {
 	}
 	
 	public String getInfo1() {
-		return " Condition: " + condition + " Size: " + size + " Advantage: " + advantage + " Disadvantage: " + disadvantage;
+		return " Condition: " + condition + " | Size: " + size + " | Advantage: " + advantage + " | Disadvantage: " + disadvantage;
 	}
 	public String getInfo2() {
-		return " Condition: " + condition + " Size: " + size + " Advantage: " + advantage + " Disadvantage: " + disadvantage;
+		return " Condition: " + condition + " | Size: " + size + " | Advantage: " + advantage + " | Disadvantage: " + disadvantage;
 	}
 	public String getInfo3() {
-		return " Condition: " + condition + " Size: " + size + " Advantage: " + advantage + " Disadvantage: " + disadvantage;
+		return " Condition: " + condition + " | Size: " + size + " | Advantage: " + advantage + " | Disadvantage: " + disadvantage;
 	}
 	
 }

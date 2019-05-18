@@ -7,7 +7,7 @@ public class Pinto extends Vehicle {
 
 //	Methods
 	
-	public Pinto(String condition, String size, String advantage, String disadvantage) {
+	public Pinto(int condition, String size, String advantage, String disadvantage) {
 		super(condition, size, advantage, disadvantage);
 		
 		System.out.println("The Pinto comes with some great battle ready feature, including"
@@ -16,7 +16,7 @@ public class Pinto extends Vehicle {
 		System.out.println("The Pinto is prone to spontaneous combustion receiving frequent damage");
 		System.out.println();
 		
-		Vehicle pinto = new Vehicle("5", "Small", "Conbustable", "Conbustable");
+		Vehicle pinto = new Vehicle(5, "Small", "Conbustable", "Conbustable");
 		System.out.println(pinto.getInfo3());
 	}
 }

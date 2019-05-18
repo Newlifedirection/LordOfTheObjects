@@ -7,7 +7,7 @@ public class Camry extends Vehicle {
 	
 //	Methods
 	
-	public Camry(String condition, String size, String advantage, String disadvantage) {
+	public Camry(int condition, String size, String advantage, String disadvantage) {
 		super(condition, size, advantage, disadvantage);
 		
 		System.out.println(
@@ -16,7 +16,7 @@ public class Camry extends Vehicle {
 		System.out.println();
 		System.out.println("The Camry is difficult to see receiving frequent damage");
 		System.out.println();
-	Vehicle camry = new Vehicle("8", "Medium", "Maliable", "Average");
+	Vehicle camry = new Vehicle(8, "Medium", "Maliable", "Average");
 	System.out.println(camry.getInfo2());
 
 	}
