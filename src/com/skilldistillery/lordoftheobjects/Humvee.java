@@ -1,6 +1,6 @@
 package com.skilldistillery.lordoftheobjects;
 
-public class Humvee extends Player {
+public class Humvee extends Vehicle {
 
 //	Fields
 	private String condition;

@@ -2,11 +2,11 @@ package com.skilldistillery.lordoftheobjects;
 
 import java.util.Scanner;
 
-public class Player {
+public class GameApp {
 
 	public static void main(String[] args) {
-		Player vehicle = new Player();
-		vehicle.run();
+		GameApp gameApp = new GameApp();
+		gameApp.run();
 
 	}
 	public void run() {

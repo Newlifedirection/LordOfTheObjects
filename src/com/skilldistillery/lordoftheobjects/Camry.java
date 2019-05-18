@@ -1,6 +1,6 @@
 package com.skilldistillery.lordoftheobjects;
 
-public class Camry {
+public class Camry extends Vehicle {
 //	Fields
 	private String condition;
 	private String size;

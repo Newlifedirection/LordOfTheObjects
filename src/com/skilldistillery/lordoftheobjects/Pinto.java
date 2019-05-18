@@ -1,6 +1,6 @@
 package com.skilldistillery.lordoftheobjects;
 
-public class Pinto {
+public class Pinto extends Vehicle {
 //	Fields
 	private String condition;
 	private String size;
