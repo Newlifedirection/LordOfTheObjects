@@ -44,4 +44,14 @@ public class Vehicle {
 		this.disadvantage = disadvantage;
 	}
 	
+	public String getInfo1() {
+		return " Condition: " + condition + " Size: " + size + " Advantage: " + advantage + " Disadvantage: " + disadvantage;
+	}
+	public String getInfo2() {
+		return " Condition: " + condition + " Size: " + size + " Advantage: " + advantage + " Disadvantage: " + disadvantage;
+	}
+	public String getInfo3() {
+		return " Condition: " + condition + " Size: " + size + " Advantage: " + advantage + " Disadvantage: " + disadvantage;
+	}
+	
 }

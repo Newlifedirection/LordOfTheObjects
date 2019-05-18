@@ -13,7 +13,12 @@ public class Humvee extends Vehicle {
 		super(condition, size, advantage, disadvantage);
 		
 		System.out.println("The Humvee comes with some great battle ready feature, including"
-				+ "fire and small caliber bullet proof armor and a large fuel tank");
-		System.out.println("The Humvee's large fuel tank requires frequent refueling");
+				+ " fire proof armor and a large fuel tank");
+		System.out.println();
+		System.out.println("The Humvee is large receiving frequent damage, on small roads");
+		System.out.println();
+		
+		Vehicle humvee = new Vehicle("10", "Large", "Durable", "Damage prone");
+		System.out.println(humvee.getInfo1());
 	}
 }
