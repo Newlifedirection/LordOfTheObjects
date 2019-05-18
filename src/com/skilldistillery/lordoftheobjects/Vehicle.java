@@ -7,13 +7,21 @@ public class Vehicle {
 //	Fields
 	private String condition;
 	private String size;
-	private int value;
 	private String advantage;
 	private String disadvantage;
+	
 	public String getCondition() {
 		return condition;
 	}
 	
+	public Vehicle(String condition, String size, String advantage, String disadvantage) {
+		super();
+		this.condition = condition;
+		this.size = size;
+		this.advantage = advantage;
+		this.disadvantage = disadvantage;
+	}
+
 	public void setCondition(String condition) {
 		this.condition = condition;
 	}
@@ -22,12 +30,6 @@ public class Vehicle {
 	}
 	public void setSize(String size) {
 		this.size = size;
-	}
-	public int getValue() {
-		return value;
-	}
-	public void setValue(int value) {
-		this.value = value;
 	}
 	public String getAdvantage() {
 		return advantage;

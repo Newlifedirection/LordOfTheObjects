@@ -18,13 +18,17 @@ public class GameApp {
 		System.out.println("3: Pinto");
 		
 		int choice = kb.nextInt();
+		Vehicle player;
 		if(choice == 1) {
+			player = new Humvee("New and shiny 10", "TOO BIG", "Battle ready", "Costly");
 			System.out.println("Congradulatins! You picked the Humvee...over compinsating much?");
 		}
 		if(choice == 2) {
+			player = new Camry("Not new or shiny 7", "Just Right", "Camoflauge", "Plain");
 			System.out.println("Congradulations! You picked the Camry...you are ordanery");
 		}
 		if(choice == 3 ) {
+			player = new Pinto("Barely roadworthy 5", "Small", "Combustable", "Spontaneously combusts");
 			System.out.println("Congradulation! You picked the Pinto...you live for danger");
 		}
 		kb.close();
