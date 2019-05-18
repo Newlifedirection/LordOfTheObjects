@@ -25,7 +25,7 @@ public class Vehicle {
 	public void setCondition(int condition) {
 		this.condition = condition;
 		if(condition <= 0) {
-			System.out.println("Game over, you are a looser!");
+			System.out.println(" Game over, you are a looser! ");
 			System.exit(0);
 		}
 	}
@@ -56,6 +56,9 @@ public class Vehicle {
 	}
 	public String getInfo3() {
 		return " Condition: " + condition + " | Size: " + size + " | Advantage: " + advantage + " | Disadvantage: " + disadvantage;
+	}
+	public void comfrontObstacle(Scanner kb) { 
+		
 	}
 	
 }
