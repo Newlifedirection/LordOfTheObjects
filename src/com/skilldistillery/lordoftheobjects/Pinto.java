@@ -8,12 +8,12 @@ public class Pinto extends Vehicle {
 		super(condition, size, advantage, disadvantage);
 
 		System.out.println("The Pinto comes with some great battle ready feature, including"
-				+ " great aerodynamics and the ability to explode on will");
+				+ " great aerodynamics and the ability to explode at will");
 		System.out.println();
 		System.out.println("The Pinto is prone to spontaneous combustion receiving frequent damage");
 		System.out.println();
 
-		Vehicle pinto = new Vehicle(5, "Small", "Conbustable", "Conbustable");
+		Vehicle pinto = new Vehicle(5, "Small", "Combustible", "Combustible");
 		System.out.println(pinto.getInfo3());
 	}
 
@@ -59,7 +59,7 @@ public class Pinto extends Vehicle {
 			}
 			if (decision == 2) {
 				System.out.println(
-						"Godzilla thaught a cockroach ran passed his foot and ran away.");
+						"Godzilla thought a cockroach ran passed his foot and ran away.");
 				this.setCondition(this.getCondition() - 0);
 
 			}
@@ -89,7 +89,7 @@ public class Pinto extends Vehicle {
 
 			}
 			if (decision == 3) {
-				System.out.println("You jumped out of your moving car, when the car hit thanos it exploded."
+				System.out.println("You jumped out of your moving car, when the car hit Thanos it exploded."
 						+ "But an alien came up behind you and stabbed you.");
 				this.setCondition(this.getCondition() - 10);
 

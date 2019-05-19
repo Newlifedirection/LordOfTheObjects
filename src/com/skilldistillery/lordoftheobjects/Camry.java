@@ -8,7 +8,7 @@ public class Camry extends Vehicle {
 		super(condition, size, advantage, disadvantage);
 
 		System.out.println(
-				"The Camry comes with some great battle ready feature, including" + " ultimate urban camoflauge");
+				"The Camry comes with some great battle ready features including" + " ultimate urban camouflage");
 		System.out.println();
 		System.out.println("The Camry is difficult to see receiving frequent damage");
 		System.out.println();
@@ -31,7 +31,7 @@ public class Camry extends Vehicle {
 
 			if (decision == 1) {
 				System.out.println(
-						"Oh no the animals saw your normal ordinary looking car and are enraged. they threw poop and rammed your car");
+						"Oh no the animals saw your normal ordinary looking car and are enraged. They threw poop and rammed your car");
 				this.setCondition(this.getCondition() - 3);
 
 			}
@@ -89,7 +89,7 @@ public class Camry extends Vehicle {
 
 			}
 			if (decision == 3) {
-				System.out.println("The avengers heard your cry and braught you to safety");
+				System.out.println("The avengers heard your cry and brought you to safety");
 				this.setCondition(this.getCondition() - 0);
 			}
 			System.out.println(this.getCondition());

@@ -21,19 +21,19 @@ public class GameApp {
 		Vehicle player;
 		
 		if(choice == 1) {
-			System.out.println("Congradulatins! You picked the Humvee...over compinsating much?");
+			System.out.println("Congratulatins! You picked the Humvee...over compensating much?");
 			System.out.println();
 			player = new Humvee(10, "TOO BIG", "Battle ready", "Costly");
 		}
 		else if(choice == 2) {
-			System.out.println("Congradulations! You picked the Camry...you are ordanery");
+			System.out.println("Congratulations! You picked the Camry...you are ordinery");
 			System.out.println();
-			player = new Camry(7, "Just Right", "Camoflauge", "Plain");
+			player = new Camry(7, "Just Right", "Camouflage", "Plain");
 		}
 		else {
-			System.out.println("Congradulation! You picked the Pinto...you live for danger");
+			System.out.println("Congratulation! You picked the Pinto...you live for danger");     	
 			System.out.println();
-			player = new Pinto(5, "Small", "Combustable", "Spontaneously combusts");
+			player = new Pinto(5, "Small", "Combustible", "Spontaneously combusts");
 		}
 		
 		System.out.println();

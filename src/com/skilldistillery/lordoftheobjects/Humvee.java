@@ -8,9 +8,9 @@ public class Humvee extends Vehicle {
 		super(condition, size, advantage, disadvantage);
 
 		System.out.println("The Humvee comes with some great battle ready feature, including"
-				+ " fire proof armor and a large fuel tank");
+				+ " fireproof armor and a large fuel tank");
 		System.out.println();
-		System.out.println("The Humvee is large receiving frequent damage, on small roads");
+		System.out.println("The Humvee is large receiving frequent damage on small roads");
 		System.out.println();
 
 		Vehicle humvee = new Vehicle(10, "Large", "Durable", "Damage prone");
@@ -65,7 +65,7 @@ public class Humvee extends Vehicle {
 
 			}
 			if (decision == 3) {
-				System.out.println("Godzilla dancing made your car flip a cpuple of times");
+				System.out.println("Godzilla dancing made your car flip a couple of times");
 				this.setCondition(this.getCondition() - 1);
 
 			}
@@ -74,7 +74,7 @@ public class Humvee extends Vehicle {
 		if (o == obstacle.getObstacle()[2]) {
 			System.out.println("1: Thor battles Thanos, throwing his hammer");
 			System.out.println("2: The Hulk throws a car in you path narrowly missing you");
-			System.out.println("3: Iron man is thrown, sliding across the payment, stopping a your bumper");
+			System.out.println("3: Iron man is thrown, sliding across the payment, stopping at your bumper");
 			int decision = kb.nextInt();
 
 			if (decision == 1) {

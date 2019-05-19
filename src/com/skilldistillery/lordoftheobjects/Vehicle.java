@@ -24,7 +24,7 @@ public class Vehicle {
 	public void setCondition(int condition) {
 		this.condition = condition;
 		if(condition <= 0) {
-			System.out.println(" Game over, you are a looser! ");
+			System.out.println(" Game over, you are a loser! ");
 			System.exit(0);
 		}
 	}
