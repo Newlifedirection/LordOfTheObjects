@@ -4,12 +4,6 @@ import java.util.Scanner;
 
 public class Humvee extends Vehicle {
 
-//	Fields
-
-//	Constructors
-
-//		Methods
-
 	public Humvee(int condition, String size, String advantage, String disadvantage) {
 		super(condition, size, advantage, disadvantage);
 
@@ -54,9 +48,9 @@ public class Humvee extends Vehicle {
 		}
 
 		if (o == obstacle.getObstacle()[1]) {
-			System.out.println("Drive under Godzilla Dancing.");
-			System.out.println("Drive around Godzilla Dancing.");
-			System.out.println("Wait for Godzilla to leave.");
+			System.out.println("1: Drive under Godzilla Dancing.");
+			System.out.println("2: Drive around Godzilla Dancing.");
+			System.out.println("3: Wait for Godzilla to leave.");
 			int decision = kb.nextInt();
 
 			if (decision == 1) {
@@ -78,9 +72,9 @@ public class Humvee extends Vehicle {
 			System.out.println(this.getCondition());
 		}
 		if (o == obstacle.getObstacle()[2]) {
-			System.out.println("Thor battles Thanos, throwing his hammer");
-			System.out.println("The Hulk throws a car in you path narrowly missing you");
-			System.out.println("Iron man is thrown, sliding across the payment, stopping a your bumper");
+			System.out.println("1: Thor battles Thanos, throwing his hammer");
+			System.out.println("2: The Hulk throws a car in you path narrowly missing you");
+			System.out.println("3: Iron man is thrown, sliding across the payment, stopping a your bumper");
 			int decision = kb.nextInt();
 
 			if (decision == 1) {

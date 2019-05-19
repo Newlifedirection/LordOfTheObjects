@@ -19,6 +19,7 @@ public class GameApp {
 		
 		int choice = kb.nextInt();
 		Vehicle player;
+		
 		if(choice == 1) {
 			System.out.println("Congradulatins! You picked the Humvee...over compinsating much?");
 			System.out.println();
@@ -36,7 +37,7 @@ public class GameApp {
 		}
 		
 		System.out.println();
-		for (int i = 0; i < 3 ; i++) {
+		for (int i = 1; i < 3 ; i++) {
 			player.comfrontObstacle(kb); }
 		
 		System.out.println(" Congradulations! You have survived the morning commute. " 

@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Vehicle {
 
-//	Fields
 	private int condition;
 	private String size;
 	private String advantage;
@@ -58,7 +57,5 @@ public class Vehicle {
 		return " Condition: " + condition + " | Size: " + size + " | Advantage: " + advantage + " | Disadvantage: " + disadvantage;
 	}
 	public void comfrontObstacle(Scanner kb) { 
-		
 	}
-	
 }

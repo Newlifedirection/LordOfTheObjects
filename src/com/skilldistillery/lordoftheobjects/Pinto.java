@@ -3,11 +3,6 @@ package com.skilldistillery.lordoftheobjects;
 import java.util.Scanner;
 
 public class Pinto extends Vehicle {
-//	Fields
-
-//	Constructors
-
-//	Methods
 
 	public Pinto(int condition, String size, String advantage, String disadvantage) {
 		super(condition, size, advantage, disadvantage);
@@ -52,9 +47,9 @@ public class Pinto extends Vehicle {
 		}
 
 		if (o == obstacle.getObstacle()[1]) {
-			System.out.println("Drive under Godzilla Dancing.");
-			System.out.println("Drive around Godzilla Dancing.");
-			System.out.println("Wait for Godzilla to leave.");
+			System.out.println("1: Drive under Godzilla Dancing.");
+			System.out.println("2: Drive around Godzilla Dancing.");
+			System.out.println("3: Wait for Godzilla to leave.");
 			int decision = kb.nextInt();
 
 			if (decision == 1) {
