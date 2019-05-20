@@ -8,9 +8,9 @@ public class Humvee extends Vehicle {
 		super(condition, size, advantage, disadvantage);
 
 		System.out.println("The Humvee comes with some great battle ready feature, including"
-				+ " fireproof armor and a large fuel tank");
+				+ " fire proof armor and a large fuel tank");
 		System.out.println();
-		System.out.println("The Humvee is large receiving frequent damage on small roads");
+		System.out.println("The Humvee is large receiving frequent damage, on small roads");
 		System.out.println();
 
 		Vehicle humvee = new Vehicle(10, "Large", "Durable", "Damage prone");
@@ -32,19 +32,24 @@ public class Humvee extends Vehicle {
 
 			if (decision == 1) {
 				System.out.println("Oh no the tires slipped on poop and you hit a wall");
-				this.setCondition(this.getCondition() - 3);
+				int damage = (int) (Math.floor(Math.random() * 6) + 4) ;
+				this.setCondition(this.getCondition() - damage);
 
 			}
 			if (decision == 2) {
 				System.out.println("Oh no.. poop landed on your face right when you stuck your head out the window");
-				this.setCondition(this.getCondition() - 2);
+				int damage = (int) (Math.floor(Math.random() * 2) + 1) ;
+				this.setCondition(this.getCondition() - damage);
 
 			}
 			if (decision == 3) {
 				System.out.println("You drive past undamaged, continue on");
 				this.setCondition(this.getCondition() - 0);
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
+			System.out.println();
+			System.out.println("After getting out of there you run into");
+			System.out.println();
 		}
 
 		if (o == obstacle.getObstacle()[1]) {
@@ -54,22 +59,31 @@ public class Humvee extends Vehicle {
 			int decision = kb.nextInt();
 
 			if (decision == 1) {
-				System.out.println("Wow you were lucky Godzilla missed you.");
+				System.out.println("Wow you were lucky Godzilla was to busy dancing and didn't notice you.");
+				System.out.println("Your car took : 0 damage");
 				this.setCondition(this.getCondition() - 0);
 
 			}
 			if (decision == 2) {
 				System.out.println(
 						"The car was too fat and Godzilla grazed your car making your car spin out and hitting a wall.");
-				this.setCondition(this.getCondition() - 3);
+				int damage = (int) (Math.floor(Math.random() * 6) + 4) ;
+				System.out.println("Your car took : " + damage + " damage");
+				this.setCondition(this.getCondition() - damage);
 
 			}
 			if (decision == 3) {
-				System.out.println("Godzilla dancing made your car flip a couple of times");
-				this.setCondition(this.getCondition() - 1);
+				System.out.println("Godzilla dancing made your car flip a cpuple of times");
+				int damage = (int) (Math.floor(Math.random() * 3) + 2) ;
+				System.out.println("Your car took : " + damage + " damage");
+				this.setCondition(this.getCondition() - damage);
 
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
+			System.out.println();
+			System.out.println("After that you drove down the road and make a left and encounter");
+			System.out.println();
+
 		}
 		if (o == obstacle.getObstacle()[2]) {
 			System.out.println("1: Thor battles Thanos, throwing his hammer");
@@ -80,19 +94,29 @@ public class Humvee extends Vehicle {
 			if (decision == 1) {
 				System.out.println(
 						"That was close, the hammer smashes through your back window landing in the back seat");
-				this.setCondition(this.getCondition() - 3);
+				int damage = (int) (Math.floor(Math.random() * 4) + 2) ;
+				System.out.println("Your car took : " + damage + " damage");
+				this.setCondition(this.getCondition() - damage);
 
 			}
 			if (decision == 2) {
-				System.out.println("You dont stop fast enough and crash into the upside down car");
-				this.setCondition(this.getCondition() - 4);
+				System.out.println("You didn't stop fast enough and crash into a near by upside down car");
+				int damage = (int) (Math.floor(Math.random() * 4) + 2) ;
+				System.out.println("Your car took : " + damage + " damage");
+				this.setCondition(this.getCondition() - damage);
 
 			}
-			if (decision == 3) {
-				System.out.println("Luckily Iron Man is a little banged up, but you sustain no damage");
-				this.setCondition(this.getCondition() - 0);
+			if(decision == 3) {
+				System.out.println("Iron man didn't see you inside and threw you.");
+				int damage = (int) (Math.floor(Math.random() * 6) + 4) ;
+				System.out.println("Your car took : " + damage + " damage");
+				this.setCondition(this.getCondition() - damage);
+				
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
+			System.out.println();
+			System.out.println("After that mess you run into");
+			System.out.println();
 		}
 	}
 }

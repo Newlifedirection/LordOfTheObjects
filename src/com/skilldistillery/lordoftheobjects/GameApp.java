@@ -40,7 +40,7 @@ public class GameApp {
 		for (int i = 1; i < 3 ; i++) {
 			player.comfrontObstacle(kb); }
 		
-		System.out.println(" Congradulations! You have survived the morning commute. " 
+		System.out.println(" Congratulations! You have survived the morning commute. " 
 				+ " You Win and Dr. Strange teleports you home safely.");
 		
 		kb.close();
