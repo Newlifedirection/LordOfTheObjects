@@ -13,11 +13,12 @@ may not be damaged. Don't let you condition drop to 0. If you are lucky, you
 may get some help along the way.
 
 
-### Technonogies Used
+### Technologies Used
 
 + Java
 + Object Oriented / Inheritance
 + Markdown
++ Encapsulation
 + Superclass and subclass
 
 ### Lessons Learned
